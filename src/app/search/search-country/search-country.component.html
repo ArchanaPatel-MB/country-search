@@ -1,4 +1,4 @@
-<!-- <div class="row">
+<div class="row">
   <div class="col">
     <div ngbDropdown class="d-inline-block">
       <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Filter Country By region</button>
@@ -11,10 +11,7 @@
         <button ype="submit" (click)="Update('Polar')" id="Polar" ngbDropdownItem>Polar</button>
       </div>
     </div>
-  </div> -->
-
-
-
+  </div>
 <div id="position"><nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
        
@@ -28,7 +25,7 @@
   </div>
 
   <div id="country-details">
-    <div *ngFor="let item of country | searchPipe:searchCountry">
+    <div *ngFor="let item of country | searchPipe:searchCountry | filterPipe:filteredCountry" >
         <div id="flag-card">
             <div id="image"> <img alt="flag" [src]="item.flag"> </div>
             <div id="text">

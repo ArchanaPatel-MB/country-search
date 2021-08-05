@@ -65,3 +65,19 @@
     font-weight: normal;
    }
   
+   .btn-outline-primary {
+    color: #198754;
+    border-color: #c7cbc5;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #fff;
+    /* background-color: #0d6efd; */
+    border-color: #b3cca4;
+  }
+  .btn-outline-primary:hover {
+    color: white;
+    background-color:#198754;
+    border-color: #198754;
+    box-shadow:none;
+  }
