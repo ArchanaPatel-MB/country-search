@@ -8,19 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilterCountryComponent implements OnInit {
 
+  filteredCountry:string='';
   public country:any=[]
 
   constructor( private _countryServices: CountryService) { }
+
+   
 
   ngOnInit(): void {
     this._countryServices.getCountries()
       .subscribe(data=> this.country=data)
   
  
-      setTimeout(()=>{
-        console.log(this.country)
-      },8000)
   }
+
+Update(value : string)
+{
+     this.filteredCountry = value;
+     console.log(this.filteredCountry)
+}
   
 
 }

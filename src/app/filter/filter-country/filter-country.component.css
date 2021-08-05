@@ -1,4 +1,21 @@
-#country-details{
+.btn-outline-primary {
+  color: #198754;
+  border-color: #c7cbc5;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  /* background-color: #0d6efd; */
+  border-color: #b3cca4;
+}
+.btn-outline-primary:hover {
+  color: white;
+  background-color:#198754;
+  border-color: #198754;
+  box-shadow:none;
+}
+
+#country-detailss{
   height: auto;
   width: 100%;
   display: flex;
@@ -11,16 +28,7 @@
   
    
 }
-.size{
-  font-size:small;
-}
-
-#size{
-  font-size: large;
-  font-family: sans-serif
-}
-
-#flag-card{
+#flag-cardd{
   height: 27rem;
   width: 22rem;
   background-color:white;
@@ -33,22 +41,23 @@ img{
   object-fit: contain;
   border-radius: 5px;
 }
-#image{
+#imagee{
   height:60%;
   width: 100%;
   object-fit: contain;
 }
-#text{
+#textt{
   height: 40%;
   padding-left: 2rem;
   text-size-adjust: 4px;
   
 }
-.padding{
+.paddingg{
   margin-top: 0px; 
   margin-bottom: 5px;
+  font-size: large;
 }
- span{
+ .sp{
   font-style: oblique;
   font-weight: normal;
  }

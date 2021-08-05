@@ -1,0 +1,36 @@
+.container{
+    height: 54rem;
+    width: 70rem;
+    background-color: white;
+    padding: unset;
+    border: 2px solid red;
+}
+#header{
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    background-color: rosybrown;
+}
+
+button{
+    width: 6rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #aeb1b3;
+    border-color: #aeb1b3;
+}
+image{
+    height: 20rem;
+    width: 10rem;
+    background-color: rosybrown;
+}
+.img-fluid {
+    max-width: 40%;
+    height: 60%;
+    object-fit: cover;
+}

@@ -1,14 +1,29 @@
-<p>filter-country works!</p>
-<div id="country-details">
-    <div *ngFor="let item of country">
-        <div id="flag-card">
-            <div id="image"> <img alt="flag" [src]="item.flag"> </div>
-            <div id="text">
-                <h1 class="padding">{{item.name}}</h1>
-                <h2 class="padding">Capital:    <span > {{item.capital}}   </span> </h2>
-                <h2 class="padding">population: <span > {{item.population}}</span> </h2>
-                <h2 class="padding"> Region:    <span > {{item.region}}    </span> </h2>
-            </div>
-        </div>
+<div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Filter Country By region</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button type="submit" (click)="Update('Americas')" id="Americas" ngbDropdownItem>Americas</button>
+        <button ype="submit" (click)="Update('Africa')" id="Africa" ngbDropdownItem>Africa</button>
+        <button ype="submit" (click)="Update('Asia')" id="Asia" ngbDropdownItem>Asia</button>
+        <button ype="submit" (click)="Update('Europe')" id="Europe" ngbDropdownItem>Europe</button>
+        <button ype="submit" (click)="Update('Oceania')" id="Oceania" ngbDropdownItem>Oceania</button>
+        <button ype="submit" (click)="Update('Polar')" id="Polar" ngbDropdownItem>Polar</button>
+      </div>
     </div>
-</div>
+  </div>
+  <div id="country-detailss">
+    <div>
+      <div *ngFor="let item of country | filterPipe:filteredCountry">
+        <div id="flag-cardd">
+          <div id="imagee"> <img alt="flag" [src]="item.flag"> </div>
+          <div id="textt">
+              <h1 class="paddingg" style="font-size: x-large;"><b>{{item.name}}</b> </h1>
+            <h2 class="paddingg">Capital: <span class="sp"> {{item.capital}} </span> </h2>
+            <h2 class="paddingg">population: <span  class="sp"> {{item.population}}</span> </h2>
+            <h2 class="paddingg"> Region: <span class="sp"> {{item.region}} </span> </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

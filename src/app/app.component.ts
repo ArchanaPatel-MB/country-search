@@ -9,4 +9,9 @@ export class AppComponent {
   title = 'countrySerach';
 
   
+  myFunction() {
+    let element=document.querySelector('html')!
+   element.classList.toggle("dark-mode");
+
+  }
 }
