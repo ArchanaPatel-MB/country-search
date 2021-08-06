@@ -11,7 +11,7 @@ export class AppComponent {
   
   myFunction() {
     let element=document.querySelector('html')!
-   element.classList.toggle("dark-mode");
+    element.classList.toggle("dark-mode");
 
   }
 }

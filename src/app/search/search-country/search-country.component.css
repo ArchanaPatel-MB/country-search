@@ -5,7 +5,7 @@
 
 }
 #position{
-    margin-top:10rem;
+    margin-top:3rem;
     margin-right:10px
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     gap:1.8rem;
-    background-color: 	#eeecec;
+    /* background: 	#eeecec; */
     justify-content: center;
     box-shadow: #858080;
     padding: 2rem;
@@ -34,9 +34,10 @@
   #flag-card{
     height: 27rem;
     width: 22rem;
-    background-color:white;
+    background:inherit;
     margin: auto;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px;
   }
   
   img{
@@ -81,3 +82,8 @@
     border-color: #198754;
     box-shadow:none;
   }
+  /* .dark-mode {
+    background: black;
+    color: white;
+  } */
+  

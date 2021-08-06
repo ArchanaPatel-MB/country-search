@@ -33,4 +33,12 @@ export class SearchCountryComponent implements OnInit {
      console.log(this.filteredCountry)
 }
 
+myFunction() {
+  let element=document.querySelector('html')!
+  let contryDetatilsDiv=document.getElementById('country-details')!;
+  element.classList.toggle("dark-mode");
+  contryDetatilsDiv.classList.toggle("dark-mode")
+
+}
+
 }

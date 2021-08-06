@@ -1,62 +1,25 @@
-<p>it works</p>
+<div class="container">
+    <div id="header"> <b> where in the world </b>
+    </div>
+    <hr style="color: black;  margin: unset;">
+    <button (click)='back()' type="button" class="btn btn-secondary">Back </button>
 
-<!-- <div *ngFor="let index of country">
-   
-    <div *ngIf="index.name===countryName">
-       
-        <img [src]="index.flag">
-        <div >
-            <div id="left" class="box">
+    <div id="footer" *ngFor="let index of country">
+
+        <div *ngIf="index.name===countryName" style="display: flex; gap: 4rem;">
+
+                <img  [src]="index.flag"  width="500" height="500"class="img-fluid">
+            <div>
                 <h1>{{index.name}}</h1>
                 <h3>Native Name: {{index.nativeName}}</h3>
                 <h3>Region: {{index.region}}</h3>
                 <h3>Population: {{index.population | number:"1.0"}}</h3>
                 <h3>Sub Region : {{index.subregion}}</h3>
                 <h3>Capital: {{index.capital}}</h3>
-                
-            </div>
-            <div id="right" class="box">
                 <h3>Top Level Domain: {{index.topLevelDomain}}</h3>
                 <h3>Currencies: {{index.currencies[0].name}}</h3>
                 <h3> Language: {{index.languages[0].nativeName}}</h3>
             </div>
-        </div> 
-    </div>
-</div> -->
-
-
-<div class="container">
-    <div id="header">
-        where in the world
-
-
-    </div>
-    <hr style="color: black;  margin: unset;">
-
-    <div id="footer" *ngFor="let index of country">
-        
-        <div *ngIf="index.name===countryName">
-
-            <button type="button" class="btn btn-secondary">Back </button>
-                    <div id="image">
-                        <img [src]="index.flag" class="img-fluid">
-
-                    </div>
-                     <div>
-                        <h1>{{index.name}}</h1>
-                        <h3>Native Name: {{index.nativeName}}</h3>
-                        <h3>Region: {{index.region}}</h3>
-                        <h3>Population: {{index.population | number:"1.0"}}</h3>
-                        <h3>Sub Region : {{index.subregion}}</h3>
-                        <h3>Capital: {{index.capital}}</h3>
-                        <h3>Top Level Domain: {{index.topLevelDomain}}</h3>
-                        <h3>Currencies: {{index.currencies[0].name}}</h3>
-                        <h3> Language: {{index.languages[0].nativeName}}</h3>
-                    </div>
-
         </div>
-        
     </div>
-
-
 </div>

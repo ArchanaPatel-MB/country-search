@@ -1,41 +1,43 @@
-<div class="row">
-  <div class="col">
-    <div ngbDropdown class="d-inline-block">
-      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Filter Country By region</button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button type="submit" (click)="Update('Americas')" id="Americas" ngbDropdownItem>Americas</button>
-        <button ype="submit" (click)="Update('Africa')" id="Africa" ngbDropdownItem>Africa</button>
-        <button ype="submit" (click)="Update('Asia')" id="Asia" ngbDropdownItem>Asia</button>
-        <button ype="submit" (click)="Update('Europe')" id="Europe" ngbDropdownItem>Europe</button>
-        <button ype="submit" (click)="Update('Oceania')" id="Oceania" ngbDropdownItem>Oceania</button>
-        <button ype="submit" (click)="Update('Polar')" id="Polar" ngbDropdownItem>Polar</button>
-      </div>
-    </div>
-  </div>
-<div id="position"><nav class="navbar navbar-light bg-light">
+<div id="position">
+  <button type="button"  (click)="myFunction()">Toggle dark mode</button>
+  <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-       
-        <a class="navbar-brand" ></a>
-        <form class="d-flex">
-          <input name="searchbox" [(ngModel)]="searchCountry"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
-          <button (click)="onClickSearch(searchCountry)" class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  </div>
-
-  <div id="country-details">
-    <div *ngFor="let item of country | searchPipe:searchCountry | filterPipe:filteredCountry" >
-        <div id="flag-card">
-            <div id="image"> <img alt="flag" [src]="item.flag"> </div>
-            <div id="text">
-            <a routerLink='countryDetails/{{item.name}}'>
-                  <h1  (click)="onclick(item.name)" class="padding" style="font-size: x-large;"><b>{{item.name}}</b> </h1>
-                </a>
-                <h2 class="padding">Capital:    <span > {{item.capital}}   </span> </h2>
-                <h2 class="padding">population: <span > {{item.population}}</span> </h2>
-                <h2 class="padding"> Region:    <span > {{item.region}}    </span> </h2>
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Filter Country By
+              region</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button type="submit" (click)="Update('Americas')" id="Americas" ngbDropdownItem>Americas</button>
+              <button ype="submit" (click)="Update('Africa')" id="Africa" ngbDropdownItem>Africa</button>
+              <button ype="submit" (click)="Update('Asia')" id="Asia" ngbDropdownItem>Asia</button>
+              <button ype="submit" (click)="Update('Europe')" id="Europe" ngbDropdownItem>Europe</button>
+              <button ype="submit" (click)="Update('Oceania')" id="Oceania" ngbDropdownItem>Oceania</button>
+              <button ype="submit" (click)="Update('Polar')" id="Polar" ngbDropdownItem>Polar</button>
             </div>
+          </div>
         </div>
+      </div>
+      <a class="navbar-brand"></a>
+      <form class="d-flex">
+        <input name="searchbox" [(ngModel)]="searchCountry" class="form-control me-2" type="search" placeholder="Search"
+          aria-label="Search">
+        <button (click)="onClickSearch(searchCountry)" class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-</div>
+  </nav>
+  <div id="country-details">
+    <div *ngFor="let item of country | searchPipe:searchCountry | filterPipe:filteredCountry">
+      <div id="flag-card">
+        <div id="image"> <img alt="flag" [src]="item.flag"> </div>
+        <div id="text">
+          <a routerLink='countryDetails/{{item.name}}'>
+            <h1 (click)="onclick(item.name)" class="padding" style="font-size: x-large;"><b>{{item.name}}</b> </h1>
+          </a>
+          <h2 class="padding">Capital: <span> {{item.capital}} </span> </h2>
+          <h2 class="padding">population: <span> {{item.population}}</span> </h2>
+          <h2 class="padding"> Region: <span> {{item.region}} </span> </h2>
+        </div>
+      </div>
+    </div>
+  </div>
