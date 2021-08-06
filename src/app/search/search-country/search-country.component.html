@@ -29,7 +29,7 @@
   </nav>
   <div id="country-details" >
     <div *ngFor="let item of country | searchPipe:searchCountry | filterPipe:filteredCountry">
-      <div >
+      
       <div id="flag-card">
         <div id="image"> <img alt="flag" [src]="item.flag"> </div>
         <div id="text">

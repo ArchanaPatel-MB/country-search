@@ -4,8 +4,8 @@
     <hr style="color: black;  margin: unset;">
     <button (click)='back()' type="button" class="btn btn-secondary">Back </button>
 
-    <div id="footer" *ngFor="let index of country">
-
+    <div id="footer" >
+<div *ngFor="let index of country">
         <div *ngIf="index.name===countryName" style="display: flex; gap: 4rem;">
 
                 <img  [src]="index.flag"  width="500" height="500"class="img-fluid">
@@ -21,5 +21,6 @@
                 <h3> Language:   <span class="sp">{{index.languages[0].nativeName}}  </span> </h3>
             </div>
         </div>
+    </div>
     </div>
 </div>
