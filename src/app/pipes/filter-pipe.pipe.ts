@@ -13,9 +13,10 @@ export class FilterPipePipe implements PipeTransform {
     for(const user of value){
      if( user['region']===filterString){
        users.push(user)
+      
      }
-
     }
+    console.log(users)
     return users
   }
 

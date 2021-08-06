@@ -82,8 +82,16 @@
     border-color: #198754;
     box-shadow:none;
   }
-  /* .dark-mode {
-    background: black;
-    color: white;
-  } */
-  
+ 
+ #darkMode{
+   width:10%;
+   font-size: larger;
+   margin-top: 6px;
+   padding-top: 0.5rem;
+   padding-left: 2rem;
+ }
+ .mat-typography{
+  color: inherit;
+  background: inherit;
+}
+

@@ -1,5 +1,6 @@
-<div id="position">
-  <button type="button"  (click)="myFunction()">Toggle dark mode</button>
+
+ <div  id="darkMode" (click)="myFunction()"><b> dark mode </b> </div><div id="position">
+
   <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
       <div class="row">
@@ -26,8 +27,9 @@
       </form>
     </div>
   </nav>
-  <div id="country-details">
+  <div id="country-details" >
     <div *ngFor="let item of country | searchPipe:searchCountry | filterPipe:filteredCountry">
+      <div >
       <div id="flag-card">
         <div id="image"> <img alt="flag" [src]="item.flag"> </div>
         <div id="text">
@@ -38,6 +40,7 @@
           <h2 class="padding">population: <span> {{item.population}}</span> </h2>
           <h2 class="padding"> Region: <span> {{item.region}} </span> </h2>
         </div>
+      </div>
       </div>
     </div>
   </div>

@@ -11,14 +11,14 @@
                 <img  [src]="index.flag"  width="500" height="500"class="img-fluid">
             <div>
                 <h1>{{index.name}}</h1>
-                <h3>Native Name: {{index.nativeName}}</h3>
-                <h3>Region: {{index.region}}</h3>
-                <h3>Population: {{index.population | number:"1.0"}}</h3>
-                <h3>Sub Region : {{index.subregion}}</h3>
-                <h3>Capital: {{index.capital}}</h3>
-                <h3>Top Level Domain: {{index.topLevelDomain}}</h3>
-                <h3>Currencies: {{index.currencies[0].name}}</h3>
-                <h3> Language: {{index.languages[0].nativeName}}</h3>
+                <h3>Region:      <span class="sp">{{index.region}}                   </span> </h3>
+                <h3>Native Name: <span class="sp">{{index.nativeName}}               </span> </h3>
+                <h3>Population:  <span class="sp">{{index.population | number:"1.0"}}</span> </h3>
+                <h3>Sub Region : <span class="sp">{{index.subregion}}                </span> </h3>
+                <h3>Capital:     <span class="sp">{{index.capital}}                  </span> </h3>
+           <h3>Top Level Domain: <span class="sp">{{index.topLevelDomain}}           </span> </h3>
+                <h3>Currencies:  <span class="sp">{{index.currencies[0].name}}       </span> </h3>
+                <h3> Language:   <span class="sp">{{index.languages[0].nativeName}}  </span> </h3>
             </div>
         </div>
     </div>
