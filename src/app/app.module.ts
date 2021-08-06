@@ -16,6 +16,7 @@ import { SearchCountryComponent } from './search/search-country/search-country.c
 import { SearchPipePipe } from './pipes/search-pipe.pipe';
 import { CountryDetailsComponent } from './CountryDetails/country-details/country-details.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
