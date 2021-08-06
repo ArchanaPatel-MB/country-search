@@ -94,4 +94,11 @@
   color: inherit;
   background: inherit;
 }
+button[_ngcontent-okf-c17] {
+  width: 4rem;
+  margin-left: 0.5rem;
+  margin-top: 3rem;
+  border-radius: 5px;
+  padding: 0.6;
+}
 

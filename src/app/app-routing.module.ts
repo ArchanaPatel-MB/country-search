@@ -13,10 +13,6 @@ const routes: Routes = [
   path:"countryDetails/:name",
   component:CountryDetailsComponent
 }
-
-
-
-
 ];
 
 @NgModule({
